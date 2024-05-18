@@ -8,19 +8,10 @@ df_concat_new = pd.read_csv("/path/to/memotion/csv/containing/rephrased/text")
 df_concat_new = df_concat.drop_duplicates(subset='rephrased_text', keep='first')    # rephrased_text is the column containing text rephrased using gpt-3.5-turbo
 
 def preprocess_ocr_text(text):
-    # Convert to lowercase
     text = text.lower()
-
-    # Remove non-alphanumeric characters and extra whitespaces
     text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
-
-    # Remove numbers
     text = re.sub(r'\d+', '', text)
-
-    # Remove extra whitespaces
     text = re.sub(r'\s+', ' ', text).strip()
-
-    # Remove punctuation
     text = text.translate(str.maketrans('', '', string.punctuation))
 
     return text
