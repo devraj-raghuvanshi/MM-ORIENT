@@ -1,4 +1,4 @@
-# MM-ORIENT - A Multimodal-Multitask Framework with Cross-modal Relation and Hierarchical Interactive Attention for Semantic Comprehension
+# MM-ORIENT: A Multimodal-Multitask Framework with Cross-modal Relation and Hierarchical Interactive Attention for Semantic Comprehension
 
 ![architecture](https://github.com/devraj-raghuvanshi/MM-ORIENT/assets/108318452/dcd04d11-e390-47f8-b678-ff4c3b291fc4)
 
