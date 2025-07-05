@@ -49,19 +49,24 @@ from utils.label_utils import get_train_labels, get_test_labels
 Update the placeholder paths in `src/model.py` with your actual data paths:
 
 ```python
-# Training data
+
 dataframe = pd.read_csv("path/to/dataset/train_labels.csv")
+
+# CMRL features
 img_glob = np.load("path/to/clip_features/image_clip_train.npy")
 text_glob = np.load("path/to/clip_features/text_clip_train.npy")
 
-# Monomodal features
+# HIMA features
 img_monomodal_features = np.load("path/to/monomodal_features/image_features_train.npy")
 text_monomodal_features = np.load("path/to/monomodal_features/text_features_train.npy")
 
-# Additional features
+# additional features
 toxicity = np.load("path/to/additional_features/roberta_features_train.npy")
 nrclex = np.load("path/to/additional_features/nrclex_features_train.npy")
 stanford = np.load("path/to/additional_features/corenlp_features_train.npy")
+
+...
+
 ```
 
 
