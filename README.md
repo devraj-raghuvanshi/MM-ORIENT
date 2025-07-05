@@ -5,29 +5,26 @@ The multimodal learning methods have constantly focused on acquiring a proficien
 ## Project Structure
 
 ```
-MM-ORIENT-main/
-├── src/                          # Main source code
-│   ├── __init__.py              # Package initialization
-│   └── model.py                 # Main model implementation
-├── utils/                        # Utility functions
-│   ├── __init__.py              # Package initialization
-│   └── label_utils.py           # Label processing utilities
-├── scripts/                      # Processing scripts
-│   ├── augmentation/            # Data augmentation scripts
+MM-ORIENT/
+├── src/                               # Main source code
+│   ├── __init__.py                    # Package initialization
+│   └── model.py                       # Main model implementation
+├── utils/                             # Utility functions
+│   ├── __init__.py                    # Package initialization
+│   └── label_utils.py                 # Label processing utilities
+├── scripts/                           # Processing scripts
+│   ├── augmentation/                  # Data augmentation scripts
 │   │   ├── few_shot_prompting.py
 │   │   └── image_transformation.py
-│   ├── feature_extraction/      # Feature extraction scripts
+│   ├── feature_extraction/            # Feature extraction scripts
 │   │   ├── img_mrcnnx152_features.py
 │   │   ├── imgtxt_clip_features.py
 │   │   └── txt_bert_features.py
-│   └── preprocessing/           # Data preprocessing scripts
+│   └── preprocessing/                 # Data preprocessing scripts
 │       ├── mask_inpaint.py
 │       └── preprocess_text.py
-├── notebooks/                   # Jupyter notebooks
-│   └── model.ipynb             # Original model notebook
-├── setup.py                     # Package setup configuration
-├── requirements.txt             # Python dependencies
-└── README.md                   # This file
+├── requirements.txt                   # Python dependencies
+└── README.md                          # This file
 ```
 
 
