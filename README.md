@@ -6,59 +6,35 @@ The multimodal learning methods have constantly focused on acquiring a proficien
 
 ```
 MM-ORIENT/
-├── src/                               # Main source code
-│   ├── __init__.py                    # Package initialization
-│   └── model.py                       # Main model implementation
-├── utils/                             # Utility functions
-│   ├── __init__.py                    # Package initialization
-│   └── label_utils.py                 # Label processing utilities
-├── scripts/                           # Processing scripts
-│   ├── augmentation/                  # Data augmentation scripts
+├── src/                               
+│   ├── __init__.py                    
+│   └── model.py                       
+├── utils/                             
+│   ├── __init__.py                    
+│   └── label_utils.py                 
+├── scripts/                           
+│   ├── augmentation/                  
 │   │   ├── few_shot_prompting.py
 │   │   └── image_transformation.py
-│   ├── feature_extraction/            # Feature extraction scripts
+│   ├── feature_extraction/            
 │   │   ├── img_mrcnnx152_features.py
 │   │   ├── imgtxt_clip_features.py
 │   │   └── txt_bert_features.py
-│   └── preprocessing/                 # Data preprocessing scripts
+│   └── preprocessing/                 
 │       ├── mask_inpaint.py
 │       └── preprocess_text.py
-├── requirements.txt                   # Python dependencies
-└── README.md                          # This file
+├── requirements.txt                   
+└── README.md                          
 ```
 
 
-## Usage
-
-### Running the Model
+## Running the Model
 ```python
 from src.model import train_and_eval
 from utils.label_utils import get_train_labels, get_test_labels
 
 # Load your data and run training
 # See src/model.py for detailed usage
-```
-
-### Feature Extraction
-```bash
-# Extract CLIP features
-python scripts/feature_extraction/imgtxt_clip_features.py
-
-# Extract BERT features
-python scripts/feature_extraction/txt_bert_features.py
-
-# Extract MRCNN features
-python scripts/feature_extraction/img_mrcnnx152_features.py
-```
-
-### Data Processing
-```bash
-# Preprocess text data
-python scripts/preprocessing/preprocess_text.py
-
-# Apply data augmentation
-python scripts/augmentation/few_shot_prompting.py
-python scripts/augmentation/image_transformation.py
 ```
 
 
@@ -87,12 +63,6 @@ toxicity = np.load("path/to/additional_features/roberta_features_train.npy")
 nrclex = np.load("path/to/additional_features/nrclex_features_train.npy")
 stanford = np.load("path/to/additional_features/corenlp_features_train.npy")
 ```
-
-
-## Code Structure
-- `src/`: Main model implementation
-- `utils/`: Reusable utility functions
-- `scripts/`: Individual processing scripts
 
 
 ## Requirements
