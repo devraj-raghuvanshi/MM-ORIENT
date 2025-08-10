@@ -35,7 +35,7 @@ MM-ORIENT/
 
 ## Methodology
 
-Our framework, MM-ORIENT, performs semantic comprehension of memes through a multimodal–multitask architecture, combining Hierarchical Interactive Monomodal Attention (HIMA) and Cross-modal Relation Learning (CMRL).
+MM-ORIENT performs semantic comprehension of memes through a multimodal–multitask architecture, combining Hierarchical Interactive Monomodal Attention (HIMA) and Cross-modal Relation Learning (CMRL).
 
 - **Data Preprocessing**
   - **Image Masking & Inpainting**: Remove overlaid meme text using Mask-RCNN-based segmentation and gated convolution inpainting, preserving underlying visual content.
