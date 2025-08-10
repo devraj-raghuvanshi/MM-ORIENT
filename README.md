@@ -85,31 +85,6 @@ from utils.label_utils import get_train_labels, get_test_labels
 ```
 
 
-## Performance Comparison
-
-*Dataset: Memotion*
-
-| Method | Sentiment | Humor | Sarcasm | Offensive | Motivation |
-|---|---:|---:|---:|---:|---:|
-| BERT [42] | 39.24 | 32.15 | 45.42 | 39.51 | 60.15 |
-| Mask RCNN X152 [44] | 45.96 | 34.65 | 41.05 | 34.00 | 62.23 |
-| Decision-level Fusion [50] | 46.19 | 36.81 | 45.65 | 40.77 | 62.66 |
-| Feature-level Fusion [50] | 45.86 | 36.43 | 46.06 | 40.82 | 62.51 |
-| MMCA [51] | 44.76 | 35.62 | 45.18 | 39.52 | 61.33 |
-| MMSA [52] | 46.30 | 36.97 | 46.11 | 41.34 | 62.89 |
-| CLIP [41] | 47.28 | 37.52 | 46.96 | 41.24 | 64.58 |
-| VisualBert [53] | 44.26 | 34.47 | 43.74 | 39.85 | 62.44 |
-| ViLT [54] | 45.36 | 34.18 | 46.27 | 37.04 | 63.28 |
-| MIMN [58] | 35.34 | 29.90 | 47.18 | 35.34 | 59.61 |
-| MIIM [59] | 36.12 | 31.26 | 45.05 | 34.37 | 50.29 |
-| MIMN-MTL [58] | 42.91 | 34.56 | 48.54 | 35.15 | 63.11 |
-| MIIM-MTL [59] | 40.97 | 35.15 | 48.35 | 36.31 | 63.30 |
-| HIMM [3] | 46.80 | 36.70 | 48.74 | 41.55 | 65.05 |
-| Ensemble [60] | 45.42 | 37.25 | 45.89 | 41.33 | 62.87 |
-| GPT-4o [64] | 29.25 | 34.12 | 29.49 | 35.42 | 63.88 |
-| **MM-ORIENT** | **49.94** | **38.09** | **49.38** | **43.61** | **66.41** |
-
-
 ## Data Paths Configuration
 
 Update the placeholder paths in `src/model.py` with your actual data paths:
