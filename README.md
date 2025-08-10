@@ -85,14 +85,14 @@ from utils.label_utils import get_train_labels, get_test_labels
 ```
 
 
-## Performance Comparison on Memotion Dataset
+## Performance Comparison
+
+*Dataset: Memotion*
 
 | Method | Sentiment | Humor | Sarcasm | Offensive | Motivation |
 |---|---:|---:|---:|---:|---:|
-| **Monomodal** |||||  
 | BERT [42] | 39.24 | 32.15 | 45.42 | 39.51 | 60.15 |
 | Mask RCNN X152 [44] | 45.96 | 34.65 | 41.05 | 34.00 | 62.23 |
-| **Multimodal** |||||  
 | Decision-level Fusion [50] | 46.19 | 36.81 | 45.65 | 40.77 | 62.66 |
 | Feature-level Fusion [50] | 45.86 | 36.43 | 46.06 | 40.82 | 62.51 |
 | MMCA [51] | 44.76 | 35.62 | 45.18 | 39.52 | 61.33 |
